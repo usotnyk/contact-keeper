@@ -10,6 +10,9 @@ app.get('/', (req, res) =>
   res.json({ msg: 'Welcome to the ContactKeeper API' })
 );
 
+// Init Middleware (body can be accepted)
+app.use(express.json({ extended: false }));
+
 // Define routes
 
 app.use('/api/users', require('./routes/users'));
