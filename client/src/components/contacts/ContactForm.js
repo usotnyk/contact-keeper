@@ -17,7 +17,7 @@ function ContactForm() {
         type: 'personal',
       });
     }
-  }, [contactContext]);
+  }, [current]);
 
   const [contact, setContact] = useState({
     name: '',
